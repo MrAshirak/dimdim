@@ -1,0 +1,11 @@
+{
+    "name":"dimdim",
+    "version":"1.0.0",
+    "description":" Controle finceiro pessoal",
+    "scripts":{
+        "start":"node server.js"
+    },
+    "dependencies":{
+        "express":"*"
+    }
+}
