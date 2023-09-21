@@ -1,0 +1,20 @@
+{
+    "name": "rootisnot/dimdim",
+    "description": "Gerenciamento de devidas pessoais",
+    "type": "zion2",
+    "require": {
+        "vcd94xt10z/zion2": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "app\\mod\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ashirak"
+        }
+    ],
+    "minimum-stability": "dev"
+}

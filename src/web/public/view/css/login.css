@@ -1,0 +1,21 @@
+h1{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30pt;
+  color: #000;
+}
+
+#box-user{
+  width: 60%;
+  margin: 20% auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+p{
+  color:#000;
+}
+@media(min-width:1000px){
+ #box-user{ margin: 10% auto;}
+}

@@ -1,0 +1,30 @@
+body:after
+{
+  display: none;
+  content: url('../resources/system-solid-161-trending-flat.gif');
+}
+
+form{
+  width: 60%;
+  margin: auto;  
+}
+h2{
+  text-align: center; 
+}
+
+#back-page{
+  
+content: url(../resources/system-solid-161-trending-flat.svg);
+transform: rotate(-0.50turn);
+width: 40px;
+height: 40px;
+ 
+}
+#back-page:hover{
+  
+  content: url(../resources/system-solid-161-trending-flat.gif);
+  transform: rotate(-0.50turn);
+  width: 40px;
+  height: 40px;
+
+}

@@ -1,0 +1,13 @@
+<?php
+	use zion\core\System; ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/web/view/img/favicon.png">
+		<meta charset='utf-8'>
+		<?php  foreach( System::get('cssList') as $uri){?>
+			<link rel="stylesheet" href="<?php  echo $uri;?>">
+	<?php } ?>
+	</head>
+

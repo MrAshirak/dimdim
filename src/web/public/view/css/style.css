@@ -1,0 +1,56 @@
+:root{
+  --home-bg: #e3e3e3;
+  --btn-bg:#04AA6D;
+  --btn-hv:#45a049;
+}
+
+body
+{
+ font-family: Georgia;
+ width: 100%;
+ background-color: var(--home-bg);
+}
+
+input[type=text],[type=password]{
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+
+ input[type=submit]{
+  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color : #fff;
+  background-color: var(--btn-bg);
+ }
+
+input[type=submit]:hover {
+
+  background-color: var(--btn-hv);
+}
+
+a{
+ font-weight: bold;
+ text-decoration: none;
+ display: inline-block;
+ color: var(--btn-hv)
+}
+
+a:hover{
+ color:var(--btn-bg);
+}
+
+h1{
+    text-align: center;
+}
