@@ -4,10 +4,19 @@
   --btn-hv:#45a049;
 }
 
+@font-face{
+	font-family: Rubik;
+	src:	url("../resources/fonts/static/Rubik-Regular.ttf") format('truetype'),
+				url("../resources/fonts/static/Rubik-Medium.ttf") format('truetype'),
+				url("../resources/fonts/static/Rubik-Bold.ttf") format('truetype'),
+				url("../resources/fonts/static/Rubik-Black.ttf") format('truetype')
+}
+
 body
 {
- font-family: Georgia;
+ font-family: Rubik;
  width: 100%;
+ min-width: 100%;
  background-color: var(--home-bg);
 }
 
@@ -22,7 +31,7 @@ input[type=text],[type=password]{
   box-sizing: border-box;
  }
 
- input[type=submit]{
+ input[type=submit], #buttom{
   
   width: 100%;
   padding: 12px 20px;
@@ -51,6 +60,9 @@ a:hover{
  color:var(--btn-bg);
 }
 
-h1{
+h1, h2{
     text-align: center;
+}
+.container-app{
+	margin-top: 5% !important ;
 }
