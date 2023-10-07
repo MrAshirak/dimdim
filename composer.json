@@ -9,7 +9,8 @@
     "autoload": {
         "psr-4": {
             "app\\mod\\": "src/"
-        }
+        },
+		"files": ["src/web/FrontEnd.php"]
     },
     "authors": [
         {
@@ -18,3 +19,4 @@
     ],
     "minimum-stability": "dev"
 }
+	

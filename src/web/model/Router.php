@@ -1,9 +1,6 @@
 <?php
 namespace app\mod\web\model;
 
-use app\mod\web\controller\AppController as App;
-use zion\orm\ObjectVO;
-
 class Router
 {
   public $request;
@@ -46,7 +43,6 @@ class Router
     if($this->hasRoute($this->request)) {
 			$this->routes[$this->request]->call($this);
 		}
-
 		http_response_code(404);
 		header("Content: txt/html");
 		echo "Esta perdido?";

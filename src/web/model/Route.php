@@ -2,6 +2,7 @@
 namespace app\mod\web\model;
 
 use app\mod\web\model\Router;
+
 use app\mod\web\controller\AppController as App;
 
 Class Route extends Router{
@@ -12,11 +13,12 @@ Class Route extends Router{
 	public function __construct()
 	{
 		$this->router = new Router($_SERVER);
-		$this->map();
+		$this->appMap();
 		$this->router->run();
 	}
 
-	private function map(){
+	private function appMap(){
+		
 		$this->router->addRoute('home', function() {
 			(new App)->actionHome();
 			exit();
@@ -24,6 +26,11 @@ Class Route extends Router{
 		
 		$this->router->addRoute('login', function() {
 			(new App)->actionLogin();
+			exit();
+		});
+	
+		$this->router->addRoute('register', function() {
+			(new App)->actionRegister();
 			exit();
 		});
 

@@ -39,15 +39,23 @@ Class AppController{
 		$this->pageBuilder(self::view . "login.phtml");
 	}
 
+	public function actionRegister(){
+		System::add('cssList',self::css . "register.css");
+		System::add('jsList',self::js . "register.js");
+		$this->pageBuilder(self::view . "register.phtml");
+
+	}
+
 	public function actionHome(){
 		System::add('cssList',  self::css . "home.css");
 		System::add('jsList', self::js . "home.js");
-		$this->pageBuilder(\zion\APP_ROOT ."src/". self::view . "home.phtml");
+		$this->pageBuilder(self::view . "home.phtml");
 	}
 	
 	public function actionDashboard(){
-		$this->pageBuilder(\zion\APP_ROOT . self::view . "dashboard.phtml");
-		
+		System::add('cssList',  self::css . "dashboard.css");	
+		System::add('jsList', self::js . "dashboard.js");
+		$this->pageBuilder(self::view . "dashboard.phtml");	
 	}
 }
 
